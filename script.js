@@ -1,4 +1,4 @@
-console.log("Hello world");
+"use strict";
 
 const copyrightYear = document.querySelector(".copyright-year");
 const btnMovileEl = document.querySelector(".btn-mobile-nav");
@@ -79,7 +79,7 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+  // console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
